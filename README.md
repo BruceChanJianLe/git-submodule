@@ -6,4 +6,4 @@ This repository demonstrates the usage of git submodule.
 
 ## Adding Submodule
 
-
+## Cloning a Repository with Submodules
