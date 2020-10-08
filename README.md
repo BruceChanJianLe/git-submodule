@@ -1,2 +1,5 @@
-# git-submodule
+# Git Submodule
+
 This repository demonstrates the usage of git submodule.
+
+## Content
