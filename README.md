@@ -7,6 +7,7 @@ This repository demonstrates the usage of git submodule. This repository itself 
 - [Adding Submodule](#Adding-Submodule)
 - [Cloning a Repository with Submodules](#Cloning-a-Repository-with-Submodules)
   - [Method 1](#Method-1)
+  - [Method 2](#Method-2)
 - [Reference](#Reference)
 
 ## Adding Submodule
