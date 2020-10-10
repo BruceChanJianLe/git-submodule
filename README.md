@@ -6,16 +6,45 @@ This repository demonstrates the usage of git submodule. This repository itself 
 
 - [Adding Submodule](#Adding-Submodule)
 - [Cloning a Repository with Submodules](#Cloning-a-Repository-with-Submodules)
+  - [Method 1](#Method-1)
 - [Reference](#Reference)
 
 ## Adding Submodule
 
 Add a submodule in your git folder by using the command below.  
 ```bash
-git submodule add https://github.com/BruceChanJianLe/TMUX_Setup.git
+git submodule add https://github.com/BruceChanJianLe/git-submodule.git
 ```
 
 ## Cloning a Repository with Submodules
+
+### Method 1
+
+Cloning a git repository with submodules is similar to any other git repository.  
+```bash
+git clone https://github.com/BruceChanJianLe/git-submodule.git
+```
+
+However, you will notice that inside the folder of the submodule is empty. To obtain the content of the submodule please run the command below.  
+```bash
+# Initialize submodule
+git submodule init
+# Update submodule
+git submodule update
+```
+
+**Alternatively**, you may run a single command to perform the above two steps.  
+```bash
+# This method is preferred
+git submodule update --init --recursive
+```
+
+### Method 2
+
+This is another method to clone a git repository with submodule if you know the repository has submodule in it before hand.  
+```bash
+git clone --recurse-submodules
+```
 
 ## Reference
 
