@@ -47,6 +47,15 @@ This is another method to clone a git repository with submodule if you know the 
 git clone --recurse-submodules
 ```
 
+## Removing a Submodule
+
+```bash
+git submodule deinit <path_to_submodule>
+git rm <path_to_submodule>
+git commit-m "Removed submodule "
+rm -rf .git/modules/<path_to_submodule>
+```
+
 ## Reference
 
 - Source page [link](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
