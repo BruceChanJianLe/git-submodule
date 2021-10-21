@@ -61,3 +61,4 @@ rm -rf .git/modules/<path_to_submodule>
 - Source page [link](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
 - Video Tutorial [link_youtube](https://www.youtube.com/watch?v=gSlXo2iLBro)
 - Remove Submodule [link_github](https://gist.github.com/myusuf3/7f645819ded92bda6677)
+- Change submodule behaviour [link](https://www.titanwolf.org/Network/q/c58b4e49-cc6a-45bd-aea8-ea31af29f73d/y)
