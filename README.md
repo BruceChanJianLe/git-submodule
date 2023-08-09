@@ -8,6 +8,8 @@ This repository demonstrates the usage of git submodule. This repository itself 
 - [Cloning a Repository with Submodules](#Cloning-a-Repository-with-Submodules)
   - [Method 1](#Method-1)
   - [Method 2](#Method-2)
+- [Updating Repository with Submodules](#Updating-Repository-with-Submodules)
+- [Removing a Submodule](##Removing-a-Submodule)
 - [Reference](#Reference)
 
 ## Adding Submodule
@@ -47,6 +49,15 @@ This is another method to clone a git repository with submodule if you know the 
 git clone --recurse-submodules
 ```
 
+## Updating Repository with Submodules
+```bash
+# To update to latest commit from root repository
+git submodule update --recursive
+# To syn with root repository (even when submodule url changes)
+git submodule sync --recursive
+```
+Ref: https://stackoverflow.com/questions/45678862/git-submodule-update-vs-git-submodule-sync
+
 ## Removing a Submodule
 
 ```bash
@@ -55,6 +66,7 @@ git rm <path_to_submodule>
 git commit-m "Removed submodule "
 rm -rf .git/modules/<path_to_submodule>
 ```
+
 
 ## Reference
 
